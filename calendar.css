@@ -1,0 +1,132 @@
+body {
+	display: flex;
+	flex-direction: column;
+	font-family: sans-serif;
+}
+
+#title {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: lightseagreen;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#date_info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#year, #month, #return_username{
+	margin: auto;
+	text-align: center;
+	font-size: 20pt;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#sign_in, #register {
+	margin: auto;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#sign_out, #add_event {
+	margin: auto;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: none;
+}
+
+h1 {
+	text-align: center;
+}
+
+#login, #sign_up {
+	width: 300pt;
+	height: 80pt;
+	right: 30%;
+    top: 15%;
+    left: 30%;
+    bottom: 30%;
+	position: absolute;
+	margin: auto;
+	text-align: center;
+	background-color: darkcyan;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	display: none;
+}
+
+#event {
+	width: 500pt;
+	height: 300pt;
+	right: 15%;
+    top: 15%;
+    left: 15%;
+    bottom: 15%;
+	position: absolute;
+	margin: auto;
+	text-align: center;
+	background-color: darkcyan;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	display: none;
+}
+
+#edit_event {
+	width: 500pt;
+	height: 300pt;
+	right: 15%;
+    top: 15%;
+    left: 15%;
+    bottom: 15%;
+	position: absolute;
+	margin: auto;
+	text-align: center;
+	background-color: darkcyan;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	display: none;
+}
+
+#login_submit, #login_close {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#calendar {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#calendar {
+	background-color: rgb(230, 230, 230);
+}
+
+#weekdays {
+	display: flex;
+	flex-direction: row;
+	background-color: rgb(200, 200, 200);
+}
+
+.days {
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: rgb(100, 100, 100);
+}
+
+.dates {
+	width: 13.6%;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	color: rgb(100, 100, 100);
+}

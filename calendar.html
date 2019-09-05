@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="calendar.css" />
+		<script src="https://classes.engineering.wustl.edu/cse330/content/calendar.min.js"></script>
+		<script src="jquery-3.3.1.min.js"></script>
+		
+        <title>calendar</title>
+	</head>
+	<body>
+		<div id="title">
+			<button id="prev" type="button">❮</button>
+			<div id="date_info">
+				<div id="year"></div>
+				<div id="month"></div>
+				<div id="return_username"></div>
+				<button id="sign_in" type="button">Sign in</button>
+				<button id="register" type="button">Register</button>
+				<button id="add_event" type="button">Add Event</button>
+				<button id="sign_out" type="button">Sign out</button>
+			</div>
+			<button id="next" type="button">❯</button>
+		</div>
+		
+		<div id="login">
+			<div id="login_username">
+				<label>username: </label>
+        		<input type="text" id="username" />
+			</div><br />
+			<div id="login_password">
+				<label>password: </label>
+        		<input type="text" id="password" />
+			</div><br />
+        	<button id="login_submit" type="button">Submit</button>
+        	<button id="login_close" type="button">Close</button>
+		</div>
+		
+		<div id="sign_up">
+			<div id="sign_up_username">
+				<label>new username: </label>
+        		<input type="text" id="new_username" />
+			</div><br />
+			<div id="sign_up_password">
+				<label>new password: </label>
+        		<input type="text" id="new_password" />
+			</div><br />
+        	<button id="sign_up_submit" type="button">Register</button>
+        	<button id="sign_up_close" type="button">Close</button>
+		</div>
+		
+		<div id="event">
+			<div id="event_title_div">
+				<label>event title: </label>
+        		<input type="text" id="event_title" />
+			</div><br />
+			<div id="event_content_div">
+				<label>event content: </label><br />
+        		<textarea type="text" id="event_content" cols="50" rows="10"></textarea>
+			</div><br />
+			<div id="event_date_div">
+				<label>event date: </label>
+        		<input type="date" id="event_date" />
+			</div><br />
+			<div id="event_time_div">
+				<label>event time: </label>
+        		<input type="time" id="event_time" />
+			</div><br />
+        	<button id="event_submit" type="button">Add Event</button>
+        	<button id="event_close" type="button">Close</button>
+		</div>
+		
+		<div id="edit_event">
+			<div id="edit_event_title_div">
+				<label>event title: </label>
+        		<input type="text" id="edit_event_title" />
+			</div><br />
+			<div id="edit_event_content_div">
+				<label>event content: </label><br />
+        		<textarea type="text" id="edit_event_content" cols="50" rows="10"></textarea>
+			</div><br />
+			<div id="edit_event_date_div">
+				<label>event date: </label>
+        		<input type="date" id="edit_event_date" />
+			</div><br />
+			<div id="edit_event_time_div">
+				<label>event time: </label>
+        		<input type="time" id="edit_event_time" />
+			</div><br />
+        	<button id="edit_event_submit" type="button">Edit Event</button>
+        	<button id="edit_event_delete" type="button">Delete Event</button>
+        	<button id="edit_event_close" type="button">Close</button>
+		</div>
+		
+		<div id="weekdays">
+			<div class="days">Sun</div>
+			<div class="days">Mon</div>
+			<div class="days">Tue</div>
+			<div class="days">Wes</div>
+			<div class="days">Thu</div>
+			<div class="days">Fri</div>
+			<div class="days">Sat</div>
+		</div>
+		<div id="calendar"></div>
+		<script src="calendar.js"></script>
+	</body>
+</html>
